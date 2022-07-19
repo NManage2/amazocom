@@ -13,3 +13,9 @@ pour large dispatching echange frontend:npm install use-reducer-logger --force
 npm install react-bootstrap bootstrap@5.
 npm install react-router-bootstrap
 npm install react-helmet-async (titres pages)
+npm install mongoose
+npm install dotenv
+npm install bcryptjs
+npm install express-async-handler (catch erreur in server.js)
+npm install jsonwebtoken
+npm install react-toastify

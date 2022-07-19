@@ -1,7 +1,22 @@
+import bcrypt from 'bcryptjs';
 const data = {
+  users: [
+    {
+      name: 'Basir',
+      email: 'admin@example.com',
+      password: bcrypt.hashSync('123456'),
+      isAdmin: true,
+    },
+    {
+      name: 'John',
+      email: 'user@example.com',
+      password: bcrypt.hashSync('123456'),
+      isAdmin: false,
+    },
+  ],
   products: [
     {
-      _id: '1',
+      //_id: '1',
       name: 'Nike Slim shirt',
       slug: 'nike-slim-shirt',
       category: 'Shirts',
@@ -14,7 +29,7 @@ const data = {
       description: 'high quality shirt',
     },
     {
-      _id: '2',
+      //_id: '2',
       name: 'Adidas Fit Shirt',
       slug: 'adidas-fit-shirt',
       category: 'Shirts',
@@ -27,7 +42,7 @@ const data = {
       description: 'high quality product',
     },
     {
-      _id: '3',
+      //_id: '3',
       name: 'Nike Slim Pant',
       slug: 'nike-slim-pant',
       category: 'Pants',
@@ -40,7 +55,7 @@ const data = {
       description: 'high quality product',
     },
     {
-      _id: '4',
+      //_id: '4',
       name: 'IKU V100 double Sim',
       slug: 'IKU V100 double Sim',
       category: 'Portable',
@@ -53,7 +68,7 @@ const data = {
       description: 'high quality product',
     },
     {
-      _id: '5',
+      //_id: '5',
       name: 'Adidas Fit Pant',
       slug: 'Adidas Fit Pant',
       category: 'Pants',
@@ -66,7 +81,7 @@ const data = {
       description: 'high quality product',
     },
     {
-      _id: '6',
+      //_id: '6',
       name: 'Nokia touches 40T 2Sim',
       slug: 'Nokia touches 40T 2Sim',
       category: 'Portable',
@@ -79,7 +94,7 @@ const data = {
       description: 'high quality product',
     },
     {
-      _id: '7',
+      //_id: '7',
       name: 'Xiaomi Redmi 10 4GO 128GO',
       slug: 'Xiaomi Redmi 10 4GO 128GO',
       category: 'Portable',
@@ -92,7 +107,7 @@ const data = {
       description: 'high quality product',
     },
     {
-      _id: '8',
+      //_id: '8',
       name: 'OPPO A94 5G 8GO 128GO',
       slug: 'OPPO A94 5G 8GO 128GO',
       category: 'Portable',
