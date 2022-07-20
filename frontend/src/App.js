@@ -14,14 +14,18 @@ import { Store } from './Store';
 import CartScreen from './screens/CartScreen';
 import SigninScreen from './screens/SigninScreen';
 import ShippingAdressScreen from './screens/ShippingAdressScreen';
+import SignupScreen from './screens/SignupScreen';
+import PaymentMethodScreen from './screens/PaymentMethodScreen';
+import PlaceOrderScreen from './screens/PlaceOrderScreen';
 
 function App() {
   const { state, dispatch: ctxDispatch } = useContext(Store);
   const { cart, userInfo } = state;
   const signoutHandler = () => {
     ctxDispatch({ type: 'USER_SIGNOUT' });
+    localStorage.removeItem('cartItems');
     localStorage.removeItem('userInfo');
-    localStorage.removeItem('shippingAddress');
+    localStorage.removeItem('shippingAdress');
     localStorage.removeItem('paymentMethod');
     window.location.href = '/signin';
   };
@@ -80,8 +84,11 @@ function App() {
               <Route path="/product/:slug" element={<ProductScreen />} />
               <Route path="/cart" element={<CartScreen />} />
               <Route path="/Signin" element={<SigninScreen />} />
+              <Route path="/Signup" element={<SignupScreen />} />
+              <Route path="/placeorder" element={<PlaceOrderScreen />} />
               <Route path="/" element={<HomeScreen />} />
               <Route path="/shipping" element={<ShippingAdressScreen />} />
+              <Route path="/payment" element={<PaymentMethodScreen />} />
             </Routes>
           </Container>
         </main>
