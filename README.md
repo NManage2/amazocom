@@ -19,3 +19,5 @@ npm install bcryptjs
 npm install express-async-handler (catch erreur in server.js)
 npm install jsonwebtoken
 npm install react-toastify
+CHERCHE Id client dans developperpypalcom?
+npm INSTALL @paypal/react-paypal-js (frontend)
