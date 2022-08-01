@@ -42,7 +42,6 @@ function Product(props) {
           <Card.Title>{product.name}</Card.Title>
         </Link>
         <Rating rating={product.rating} numReviews={product.numReviews} />
-        <Card.Text>{product.countInStock}</Card.Text>
         <Card.Text>${product.price}</Card.Text>
         {product.countInStock === testquantity(product) ? (
           <Button variant="light" disabled>
