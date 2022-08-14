@@ -143,9 +143,9 @@ export default function ProductEditScreen() {
   return (
     <Container className="small-container">
       <Helmet>
-        <title>Edit Product ${productId}</title>
+        <title>Modif Produit{productId}</title>
       </Helmet>
-      <h1>Edit Product {productId}</h1>
+      <h1>Modif Produit {productId}</h1>
 
       {loading ? (
         <LoadingBox></LoadingBox>
@@ -154,7 +154,7 @@ export default function ProductEditScreen() {
       ) : (
         <Form onSubmit={submitHandler}>
           <Form.Group className="mb-3" controlId="name">
-            <Form.Label>Name</Form.Label>
+            <Form.Label>Nom</Form.Label>
             <Form.Control
               value={name}
               onChange={(e) => setName(e.target.value)}
@@ -170,7 +170,7 @@ export default function ProductEditScreen() {
             />
           </Form.Group>
           <Form.Group className="mb-3" controlId="name">
-            <Form.Label>Price</Form.Label>
+            <Form.Label>Prix</Form.Label>
             <Form.Control
               value={price}
               onChange={(e) => setPrice(e.target.value)}
@@ -178,7 +178,7 @@ export default function ProductEditScreen() {
             />
           </Form.Group>
           <Form.Group className="mb-3" controlId="image">
-            <Form.Label>Image File</Form.Label>
+            <Form.Label>Image fichier</Form.Label>
             <Form.Control
               value={image}
               onChange={(e) => setImage(e.target.value)}
@@ -187,13 +187,13 @@ export default function ProductEditScreen() {
           </Form.Group>
 
           <Form.Group className="mb-3" controlId="imageFile">
-            <Form.Label>Upload File</Form.Label>
+            <Form.Label>Upload fichier</Form.Label>
             <Form.Control type="file" onChange={uploadFileHandler} />
             {loadingUpload && <LoadingBox></LoadingBox>}
           </Form.Group>
 
           <Form.Group className="mb-3" controlId="category">
-            <Form.Label>Category</Form.Label>
+            <Form.Label>Categorie</Form.Label>
             <Form.Control
               value={category}
               onChange={(e) => setCategory(e.target.value)}
@@ -201,7 +201,7 @@ export default function ProductEditScreen() {
             />
           </Form.Group>
           <Form.Group className="mb-3" controlId="brand">
-            <Form.Label>Brand</Form.Label>
+            <Form.Label>Marque</Form.Label>
             <Form.Control
               value={brand}
               onChange={(e) => setBrand(e.target.value)}
@@ -209,7 +209,7 @@ export default function ProductEditScreen() {
             />
           </Form.Group>
           <Form.Group className="mb-3" controlId="countInStock">
-            <Form.Label>Count In Stock</Form.Label>
+            <Form.Label>Quantité en Stock</Form.Label>
             <Form.Control
               value={countInStock}
               onChange={(e) => setCountInStock(e.target.value)}
@@ -226,7 +226,7 @@ export default function ProductEditScreen() {
           </Form.Group>
           <div className="mb-3">
             <Button disabled={loadingUpdate} type="submit">
-              Update
+              Modifier
             </Button>
             {loadingUpdate && <LoadingBox></LoadingBox>}
           </div>

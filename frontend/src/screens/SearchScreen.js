@@ -132,7 +132,7 @@ export default function SearchScreen() {
   return (
     <div>
       <Helmet>
-        <title>Search Products</title>
+        <title>Cherche Produits</title>
       </Helmet>
       <Row>
         <Col md={3}>
@@ -144,7 +144,7 @@ export default function SearchScreen() {
                   className={'all' === category ? 'text-bold' : ''}
                   to={getFilterUrl({ category: 'all' })}
                 >
-                  Any
+                  Tout
                 </Link>
               </li>
               {categories.map((c) => (
@@ -160,14 +160,14 @@ export default function SearchScreen() {
             </ul>
           </div>
           <div>
-            <h3>Price</h3>
+            <h3>Prix</h3>
             <ul>
               <li>
                 <Link
                   className={'all' === price ? 'text-bold' : ''}
                   to={getFilterUrl({ price: 'all' })}
                 >
-                  Any
+                  Tout
                 </Link>
               </li>
               {prices.map((p) => (
