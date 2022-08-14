@@ -125,7 +125,7 @@ function ProductScreen() {
                   <ListGroupItem>
                     <div className="d-grid">
                       <Button onClick={addToCartHandler} variant="primary">
-                        Ajouter au panier
+                        Ajout au panier
                       </Button>
                     </div>
                   </ListGroupItem>
