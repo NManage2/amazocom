@@ -118,7 +118,7 @@ export default function CartScreen() {
                       variant="primary"
                       disabled={cartItems.length === 0}
                     >
-                      Proceed to Checkout
+                      Passer au confirmation
                     </Button>
                   </div>
                 </ListGroup.Item>

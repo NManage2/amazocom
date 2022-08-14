@@ -40,15 +40,15 @@ export default function ShippingAdressScreen() {
   return (
     <div>
       <Helmet>
-        <title>Shipping Adress</title>
+        <title>Adresse de livraison</title>
       </Helmet>
       <CheckoutSteps step1 step2></CheckoutSteps>
       <div className="container small-container">
-        <h1 className="my-3">Shipping Adress</h1>
+        <h1 className="my-3">Adresse de livraison</h1>
 
         <Form onSubmit={submitHandler}>
           <Form.Group className="mb-3" ControlId="fullName">
-            <Form.Label>Full Name</Form.Label>
+            <Form.Label>Nom et prénom</Form.Label>
             <Form.Control
               value={fullName}
               onChange={(e) => setFullName(e.target.value)}
@@ -56,7 +56,7 @@ export default function ShippingAdressScreen() {
             />
           </Form.Group>
           <Form.Group className="mb-3" ControlId="fullName">
-            <Form.Label>Adress</Form.Label>
+            <Form.Label>Adresse</Form.Label>
             <Form.Control
               value={adress}
               onChange={(e) => setAdress(e.target.value)}
@@ -64,7 +64,7 @@ export default function ShippingAdressScreen() {
             />
           </Form.Group>
           <Form.Group className="mb-3" ControlId="fullName">
-            <Form.Label>City</Form.Label>
+            <Form.Label>Cité</Form.Label>
             <Form.Control
               value={city}
               onChange={(e) => setCity(e.target.value)}
@@ -72,7 +72,7 @@ export default function ShippingAdressScreen() {
             />
           </Form.Group>
           <Form.Group className="mb-3" ControlId="fullName">
-            <Form.Label>Postal Code</Form.Label>
+            <Form.Label>Code Postal</Form.Label>
             <Form.Control
               value={postalCode}
               onChange={(e) => setPostalCode(e.target.value)}
@@ -80,7 +80,7 @@ export default function ShippingAdressScreen() {
             />
           </Form.Group>
           <Form.Group className="mb-3" ControlId="fullName">
-            <Form.Label>Country</Form.Label>
+            <Form.Label>Pays</Form.Label>
             <Form.Control
               value={country}
               onChange={(e) => setCountry(e.target.value)}
